@@ -1,6 +1,6 @@
 // # lang helper
-// {{lang}} gives the current language tag
-// Usage example: <html lang="{{lang}}">
+// {{@site.lang}} gives the current language tag
+// Usage example: <html lang="{{@site.lang}}">
 //
 // Examples of language tags from RFC 5646:
 // de (German)

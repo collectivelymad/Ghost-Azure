@@ -1,7 +1,7 @@
 {
-    "name": "casper",
-    "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-    "demo": "https://demo.ghost.io",
+    "name": "shopperone",
+    "description": "Default Theme for Myshopperone Blog.",
+    "demo": "https://blog.myshopperone.com",
     "version": "2.9.10",
     "engines": {
         "ghost": ">=2.0.0",
@@ -22,9 +22,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "MyShopperone",
+        "email": "mike.drexler@neverpaymore.net",
+        "url": "https://myshopperone.com"
     },
     "gpm": {
         "type": "theme",
@@ -40,10 +40,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Casper.git"
+        "url": "https://github.com/Collectivelymad/ghost-azure.git"
     },
-    "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "bugs": "https://github.com/Collectivelymad/ghost-azure/issues",
+    "contributors": ["https://github.com/Collectivelymad/ghost-azure/graphs/contributors"],
     "devDependencies": {
         "@tryghost/release-utils": "0.3.2",
         "autoprefixer": "9.5.1",

@@ -67,7 +67,9 @@ const configureGrunt = function (grunt) {
             livereload: {
                 files: [
                     'content/themes/casper/assets/css/*.css',
-                    'content/themes/casper/assets/js/*.js'
+                    'content/themes/casper/assets/js/*.js',
+                    'content/themes/shopperone/assets/css/*.css',
+                    'content/themes/shopperone/assets/js/*.js'
                 ],
                 options: {
                     livereload: true,

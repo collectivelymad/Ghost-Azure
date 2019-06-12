@@ -113,7 +113,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
+    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -126,7 +126,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    background: rgba(205,0,0,0.18);
 }
 
 .site-header:after {

@@ -80,7 +80,6 @@ const configureGrunt = function (grunt) {
                 files: [
                     'core/ghost-server.js',
                     'core/server/**/*.js',
-                    '!core/server/lib/members/static/auth/**/*.js',
                     'config.*.json',
                     '!config.testing.json'
                 ],
@@ -286,8 +285,7 @@ const configureGrunt = function (grunt) {
                     npmInstall: true
                 },
                 projects: {
-                    'core/client': 'init',
-                    'core/server/lib/members/static/auth': 'init'
+                    'core/client': 'init'
                 }
             },
 
@@ -296,14 +294,12 @@ const configureGrunt = function (grunt) {
             },
 
             prod: {
-                'core/client': 'shell:ember:prod',
-                'core/server/lib/members/static/auth': 'shell:preact:prod'
+                'core/client': 'shell:ember:prod'
             },
 
             watch: {
                 projects: {
-                    'core/client': ['shell:ember:watch', '--live-reload-base-url="' + urlService.utils.getSubdir() + '/ghost/"'],
-                    'core/server/lib/members/static/auth': ['shell:preact:dev']
+                    'core/client': ['shell:ember:watch', '--live-reload-base-url="' + urlService.utils.getSubdir() + '/ghost/"']
                 }
             }
         },

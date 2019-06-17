@@ -126,7 +126,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(205,0,0,0.18);
+ 
 }
 
 .site-header:after {
@@ -232,7 +232,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-right: 24px;
     padding: 11px 0;
-    color: #fff;
+    color: #000;
     font-size: 1.7rem;
     line-height: 1em;
     font-weight: bold;
@@ -267,7 +267,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #000;
     opacity: 0.8;
 }
 
@@ -2225,7 +2225,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: #ffaa3d;
 }
 
 .site-footer-content {

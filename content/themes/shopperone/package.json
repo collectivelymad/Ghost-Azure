@@ -43,7 +43,9 @@
         "url": "https://github.com/Collectivelymad/ghost-azure.git"
     },
     "bugs": "https://github.com/Collectivelymad/ghost-azure/issues",
-    "contributors": ["https://github.com/Collectivelymad/ghost-azure/graphs/contributors"],
+    "contributors": [
+        "https://github.com/Collectivelymad/ghost-azure/graphs/contributors"
+    ],
     "devDependencies": {
         "@tryghost/release-utils": "0.3.2",
         "autoprefixer": "9.5.1",

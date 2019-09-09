@@ -24,11 +24,9 @@ const forPost = (id, attrs, frame) => {
      */
     if (!localUtils.isContentAPI(frame)) {
         if (attrs.status !== 'published' && attrs.url.match(/\/404\//)) {
-            attrs.url = urlService
-                .utils
-                .urlFor({
-                    relativeUrl: urlUtils.urlJoin('/p', attrs.uuid, '/')
-                }, null, true);
+            attrs.url = urlUtils.urlFor({
+                relativeUrl: urlUtils.urlJoin('/p', attrs.uuid, '/')
+            }, null, true);
         }
     }
 
@@ -57,12 +55,12 @@ const forPost = (id, attrs, frame) => {
             urlOptions.assetsOnly = false;
         }
 
-        attrs.html = urlUtils.makeAbsoluteUrls(
+        attrs.html = urlUtils.htmlRelativeToAbsolute(
             attrs.html,
             urlUtils.urlFor('home', true),
             attrs.url,
             urlOptions
-        ).html();
+        );
     }
 
     if (frame.options.columns && !frame.options.columns.includes('url')) {
